@@ -111,44 +111,124 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled
+# Target rules for targets named bfs
 
 # Build rule for target.
-untitled: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 untitled
-.PHONY : untitled
+bfs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bfs
+.PHONY : bfs
 
 # fast build rule for target.
-untitled/fast:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
-.PHONY : untitled/fast
+bfs/fast:
+	$(MAKE) -f CMakeFiles/bfs.dir/build.make CMakeFiles/bfs.dir/build
+.PHONY : bfs/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named ConnectedComponents
 
-.PHONY : main.o
+# Build rule for target.
+ConnectedComponents: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ConnectedComponents
+.PHONY : ConnectedComponents
+
+# fast build rule for target.
+ConnectedComponents/fast:
+	$(MAKE) -f CMakeFiles/ConnectedComponents.dir/build.make CMakeFiles/ConnectedComponents.dir/build
+.PHONY : ConnectedComponents/fast
+
+#=============================================================================
+# Target rules for targets named dfs
+
+# Build rule for target.
+dfs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dfs
+.PHONY : dfs
+
+# fast build rule for target.
+dfs/fast:
+	$(MAKE) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/build
+.PHONY : dfs/fast
+
+ConnectedComponents.o: ConnectedComponents.cpp.o
+
+.PHONY : ConnectedComponents.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.o
-.PHONY : main.cpp.o
+ConnectedComponents.cpp.o:
+	$(MAKE) -f CMakeFiles/ConnectedComponents.dir/build.make CMakeFiles/ConnectedComponents.dir/ConnectedComponents.cpp.o
+.PHONY : ConnectedComponents.cpp.o
 
-main.i: main.cpp.i
+ConnectedComponents.i: ConnectedComponents.cpp.i
 
-.PHONY : main.i
+.PHONY : ConnectedComponents.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.i
-.PHONY : main.cpp.i
+ConnectedComponents.cpp.i:
+	$(MAKE) -f CMakeFiles/ConnectedComponents.dir/build.make CMakeFiles/ConnectedComponents.dir/ConnectedComponents.cpp.i
+.PHONY : ConnectedComponents.cpp.i
 
-main.s: main.cpp.s
+ConnectedComponents.s: ConnectedComponents.cpp.s
 
-.PHONY : main.s
+.PHONY : ConnectedComponents.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.s
-.PHONY : main.cpp.s
+ConnectedComponents.cpp.s:
+	$(MAKE) -f CMakeFiles/ConnectedComponents.dir/build.make CMakeFiles/ConnectedComponents.dir/ConnectedComponents.cpp.s
+.PHONY : ConnectedComponents.cpp.s
+
+bfs.o: bfs.cpp.o
+
+.PHONY : bfs.o
+
+# target to build an object file
+bfs.cpp.o:
+	$(MAKE) -f CMakeFiles/bfs.dir/build.make CMakeFiles/bfs.dir/bfs.cpp.o
+.PHONY : bfs.cpp.o
+
+bfs.i: bfs.cpp.i
+
+.PHONY : bfs.i
+
+# target to preprocess a source file
+bfs.cpp.i:
+	$(MAKE) -f CMakeFiles/bfs.dir/build.make CMakeFiles/bfs.dir/bfs.cpp.i
+.PHONY : bfs.cpp.i
+
+bfs.s: bfs.cpp.s
+
+.PHONY : bfs.s
+
+# target to generate assembly for a file
+bfs.cpp.s:
+	$(MAKE) -f CMakeFiles/bfs.dir/build.make CMakeFiles/bfs.dir/bfs.cpp.s
+.PHONY : bfs.cpp.s
+
+dfs.o: dfs.cpp.o
+
+.PHONY : dfs.o
+
+# target to build an object file
+dfs.cpp.o:
+	$(MAKE) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/dfs.cpp.o
+.PHONY : dfs.cpp.o
+
+dfs.i: dfs.cpp.i
+
+.PHONY : dfs.i
+
+# target to preprocess a source file
+dfs.cpp.i:
+	$(MAKE) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/dfs.cpp.i
+.PHONY : dfs.cpp.i
+
+dfs.s: dfs.cpp.s
+
+.PHONY : dfs.s
+
+# target to generate assembly for a file
+dfs.cpp.s:
+	$(MAKE) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/dfs.cpp.s
+.PHONY : dfs.cpp.s
 
 # Help Target
 help:
@@ -158,10 +238,18 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... untitled"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... bfs"
+	@echo "... ConnectedComponents"
+	@echo "... dfs"
+	@echo "... ConnectedComponents.o"
+	@echo "... ConnectedComponents.i"
+	@echo "... ConnectedComponents.s"
+	@echo "... bfs.o"
+	@echo "... bfs.i"
+	@echo "... bfs.s"
+	@echo "... dfs.o"
+	@echo "... dfs.i"
+	@echo "... dfs.s"
 .PHONY : help
 
 

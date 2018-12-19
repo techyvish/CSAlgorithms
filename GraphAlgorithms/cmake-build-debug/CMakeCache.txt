@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=untitled
+CMAKE_PROJECT_NAME:STATIC=GraphAlgorithms
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.10.1.0.10B61.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -209,8 +209,20 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.10.1.0.10B61.app/Contents/Developer/Too
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+GraphAlgorithms_BINARY_DIR:STATIC=/Users/vishalp/CLionProjects/GraphAlgorithms/cmake-build-debug
+
+//Value Computed by CMake
+GraphAlgorithms_SOURCE_DIR:STATIC=/Users/vishalp/CLionProjects/GraphAlgorithms
+
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+graphalgos_BINARY_DIR:STATIC=/Users/vishalp/CLionProjects/GraphAlgorithms/cmake-build-debug
+
+//Value Computed by CMake
+graphalgos_SOURCE_DIR:STATIC=/Users/vishalp/CLionProjects/GraphAlgorithms
 
 //Value Computed by CMake
 untitled_BINARY_DIR:STATIC=/Users/vishalp/CLionProjects/GraphAlgorithms/cmake-build-debug

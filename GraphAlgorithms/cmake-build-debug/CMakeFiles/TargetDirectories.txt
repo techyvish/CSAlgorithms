@@ -1,3 +1,5 @@
 /Users/vishalp/CLionProjects/GraphAlgorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/vishalp/CLionProjects/GraphAlgorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/vishalp/CLionProjects/GraphAlgorithms/cmake-build-debug/CMakeFiles/untitled.dir
+/Users/vishalp/CLionProjects/GraphAlgorithms/cmake-build-debug/CMakeFiles/bfs.dir
+/Users/vishalp/CLionProjects/GraphAlgorithms/cmake-build-debug/CMakeFiles/ConnectedComponents.dir
+/Users/vishalp/CLionProjects/GraphAlgorithms/cmake-build-debug/CMakeFiles/dfs.dir
